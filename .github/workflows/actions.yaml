@@ -26,6 +26,6 @@ jobs:
           java-version: 17
     # Run mvn tests
       - name: Run tests with maven
-        working-directory: webdriver-java
+        working-directory: 'webdriver_java'
         run: mvn test
      # handle remote server chromedriver

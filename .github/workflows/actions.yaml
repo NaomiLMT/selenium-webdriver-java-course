@@ -34,5 +34,6 @@ jobs:
         run: |
           echo "TOTAL_DURATION=$(expr $(date +%s) - ${START_TIME})"
           ./resources/test_result_script.sh
-    #calculate total duration
+      # run the script to extract test results
+      #calculate total duration
       #make sure to run even if a previous step fails

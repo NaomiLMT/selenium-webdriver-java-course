@@ -17,4 +17,5 @@ cat <<EOF | curl --data-binary @- ${PUSHGATEWAY_URL}/metrics/job/github_actions
 "github_actions_failed_tests=$(echo ${TEST_RESULTS_STRING} | awk -F'"' '{ print $8 }')"
 "github_actions_skipped_tests=$(echo ${TEST_RESULTS_STRING} | awk -F'"' '{ print $10 }')"
 
+
 EOF

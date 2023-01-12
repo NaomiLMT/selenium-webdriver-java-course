@@ -16,6 +16,4 @@ github_actions_total_tests=$(echo ${TEST_RESULTS_STRING} | awk -F'"' '{ print $4
 github_actions_passed_tests=$(echo ${TEST_RESULTS_STRING} | awk -F'"' '{ print $6 }')
 github_actions_failed_tests=$(echo ${TEST_RESULTS_STRING} | awk -F'"' '{ print $8 }')
 github_actions_skipped_tests=$(echo ${TEST_RESULTS_STRING} | awk -F'"' '{ print $10 }')
-
-
 EOF

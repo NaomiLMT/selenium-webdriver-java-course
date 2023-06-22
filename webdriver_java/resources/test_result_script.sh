@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-
+set -euo pipefail
 ###################################################################################################
 #     This is extracting the values for each test suite description.                              #
 #     It uses awk to print the value between two quotes.                                          #

@@ -36,7 +36,7 @@ jobs:
         #introduce start of span
       - name: Telemetry start - Maven tests
         if: always()
-        run:
+        run: |
           echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
           echo "STEP_ID='run-maven-tests'" >> $GITHUB_ENV
       - name: Run tests with maven
